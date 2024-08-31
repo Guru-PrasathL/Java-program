@@ -20,7 +20,7 @@ public class TextJustification {
             StringBuilder sb = new StringBuilder();
             int gaps = last - index - 1;
             
-            
+            // If it's the last line or only one word in the line
             if (last == n || gaps == 0) {
                 for (int i = index; i < last; i++) {
                     sb.append(words[i]);
